@@ -13,17 +13,17 @@ In this  report we will present :
 
 In this project we use DDPG algorithm which stands for **D**eep **D**eterministic **P**olicy **G**radient
 
-Our agent will see one state of length 33 that represents the postion, velocity, rotation, velocity and angular velocities.
+Our agents will see one state of length 33 that represents the position, velocity, rotation, velocity and angular velocities.
 
-The agent will receive +0.1 at each time step where its hand is in contact with the target location. it output a vector of 4 entries as an action where each entry is between +1 and -1.
+The agent will receive +0.1 at each time step where its hand is in contact with the target location. it outputs a vector of 4 entries as an action where each entry is between +1 and -1.
 
-The agent is basically composed of two main neural networks :
+The agent is basically composed of two main neural networks (4 total):
  
  1. Actor neural network (Local and target) : the Policy Network
-    
     - Input layer 33 nodes (the size of the state)
     - Hidden layer 256 nodes
     - output layer : size of an action
+
 
  2. Critic neural network (Local and target) : the value Network
     
@@ -42,7 +42,7 @@ The agent is basically composed of two main neural networks :
     WEIGHT_DECAY = 0.0001  L2 weight decay
 
 # III- Results :
-My agent solved the environment in 572 episodes 
+My agent solved the environment in 178 episodes 
 
     Episode 1       Average Score: 0.11
     Episode 2       Average Score: 0.11
