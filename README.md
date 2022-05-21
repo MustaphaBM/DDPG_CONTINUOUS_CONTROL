@@ -2,7 +2,7 @@
 
 [image1]: reacher.gif "Trained Agent"
 
-# Project 1: Navigation
+# Project 2: DDPG for Reacher environment
 
 ### Introduction
 
